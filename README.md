@@ -37,6 +37,8 @@ A2A потрібен для **multi-agent систем**,
 
 ---
 
+#   Development
+
 Було створено власного declarative агента `agent-card` у namespace `kagent`.
 Для доступу до Agent Card було використано port-forward до сервісу `kagent-controller` на порт `8083`.
 Після цього за Well-Known URI було успішно отримано JSON Agent Card, який містить metadata агента, capabilities і skills.
@@ -47,6 +49,8 @@ A2A потрібен для **multi-agent систем**,
 ![Agent Card Result](screenshots/agent-cod.png)
 
 ---
+
+#   Infrastructure
 
 Inventory був розгорнутий у вже існуючому кластері abox.  
 Після оновлення `DiscoveryConfig` із використанням реальних namespace у кластері (`kagent`, `agentgateway-system`), Inventory успішно виявив AI-ресурси в abox.
